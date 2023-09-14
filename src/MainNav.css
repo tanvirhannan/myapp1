@@ -1,0 +1,32 @@
+/* MainNav.css */
+.main-nav {
+  background-color: #2C3E50; /* Dark Blue */
+  color: white;
+  padding: 1em 0;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin: 0;
+  padding: 0 1em;
+  font-size: 1.2em;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  padding: 0.5em 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #34495E; /* Slightly lighter blue */
+}

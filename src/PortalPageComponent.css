@@ -1,0 +1,68 @@
+/* PortalPageComponent.css */
+.portal-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;  /* Changed from padding-top to margin-top */
+
+  font-family: 'Helvetica', sans-serif;  /* Professional-looking font */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #F4F4F4;  /* Light background */
+}
+
+.first-section, .second-section {
+  background-color: #FFFFFF;  /* White background */
+  padding: 20px;
+  margin: 10px 0;  /* Top and bottom margin */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+.greeting {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;  /* Dark text */
+}
+
+.fund-performance {
+  display: flex;
+  align-items: center;  /* Align items vertically */
+}
+
+.second-section {
+  display: flex;
+  justify-content: space-between;  /* Space items evenly */
+}
+
+.fund1, .fund2 {
+  flex: 1;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  color: #333;  /* Dark text */
+}
+
+.fund1 {
+  background-color: #fafafa;  /* Slightly off-white background */
+}
+
+.fund2 {
+  background-color: #f2f2f2;
+  border-left: none;
+}
+
+.value-section {
+  text-align: center;
+  margin: 10px;
+  font-size: 1.2em;
+  color: #444;  /* Dark gray text */
+}
+
+/* Hover effect for interactivity */
+.fund1:hover, .fund2:hover, .value-section:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;  /* Indicate clickability */
+}
