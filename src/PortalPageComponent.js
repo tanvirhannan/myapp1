@@ -2,12 +2,13 @@
 import React, { useEffect, useState } from 'react';
 import contentfulClient from './contentfulClient';
 import './PortalPageComponent.css'; // Import the CSS
+import { specificContentfulClient } from './contentfulClient';
 
 const PortalPageComponent = () => {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    contentfulClient.getEntry('6SltIAgsPPUqJRpxuCjR00')
+    specificContentfulClient.getEntry('6SltIAgsPPUqJRpxuCjR00')
       .then((response) => {
         setData(response.fields);
       })

@@ -1,6 +1,6 @@
-// MainNav.js
 import React, { useEffect, useState } from 'react';
 import contentfulClient from './contentfulClient';
+import NavItem from './NavItem';  // Import the NavItem component
 import './MainNav.css'; // Import the CSS
 
 export const MainNav = () => {
@@ -28,10 +28,6 @@ export const MainNav = () => {
       </ul>
     </div>
   );
-};
-
-const NavItem = ({ title }) => {
-  return <li className="nav-item">{title}</li>;
 };
 
 export default MainNav;
